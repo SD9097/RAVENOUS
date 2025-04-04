@@ -1,0 +1,13 @@
+.businessList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 4.4rem 10%;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .businessList {
+    margin: 2rem 5%;
+  }
+}

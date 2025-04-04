@@ -1,0 +1,118 @@
+.searchBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25rem;
+  padding: 5.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sortOptions ul {
+  margin-bottom: 2.22rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sortOptions li {
+  cursor: pointer;
+  width: 4.33rem;
+  border-bottom: 1px solid #fff;
+  padding: 0 2.58rem 0.33rem 2.58rem;
+  line-height: 1.13;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.83rem;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+
+.sortOptions li:hover {
+  color: #d4cfcf;
+  transform: translateY(-2px);
+}
+
+.sortOptions li.active,
+.sortOptions li.active:hover {
+  border-bottom: 1px solid #f0c36c;
+  color: #f0c36c;
+}
+
+.searchFields {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.86rem;
+  gap: 2.22rem;
+}
+
+.searchFields input {
+  width: 21rem;
+  padding: 0.66rem 1rem;
+  border: 1px solid #c3c3c3;
+  border-radius: 4px;
+  font-size: 0.77rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.searchFields input:focus {
+  outline: none;
+  border-color: #cca353;
+  box-shadow: 0 0 5px rgba(204, 163, 83, 0.5);
+}
+
+.searchFields input::placeholder {
+  color: #999;
+}
+
+.submit {
+  text-align: center;
+}
+
+.submit button {
+  border-radius: 4px;
+  padding: 0.72rem 1.7rem;
+  background-color: #cca353;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.77rem;
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.submit button:hover {
+  background-color: #a7874b;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.submit button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .searchBar {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .searchFields {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searchFields input {
+    width: 100%;
+    max-width: 21rem;
+  }
+}
